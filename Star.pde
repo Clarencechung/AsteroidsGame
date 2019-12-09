@@ -2,12 +2,12 @@ class Stars
 {
   private int starX;
   private int starY;
-  private int sSize;
+  private int starSize;
   private int sColor;
 
   public Stars()
   {
-    sSize = (int)(Math.random()*8);
+    starSize = (int)(Math.random()*8);
     sColor = color(255,255,255);
     starX = (int)(Math.random()*500);
     starY = (int)(Math.random()*500);
@@ -17,6 +17,6 @@ class Stars
   {
     noStroke();
     fill(sColor);
-    ellipse(starX, starY, sSize, sSize);
+    ellipse(starX, starY, starSize, starSize);
   }
 }
