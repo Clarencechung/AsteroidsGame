@@ -12,7 +12,7 @@ public void setup()
       starField[i] = new Stars();
     }
 
-   for(int i = 0; i < 50; i ++)
+   for(int i = 0; i < 40; i ++)
    {
       rocks.add(new Asteroid());
    }
