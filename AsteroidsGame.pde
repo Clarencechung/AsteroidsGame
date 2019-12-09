@@ -65,3 +65,5 @@ public void keyPressed()
     bob.setPointDirection((int)(Math.random()*361));
   }
 }
+
+
