@@ -2,13 +2,10 @@ SpaceShip bob;
 Stars [] starField;
 ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
 
-// Bullet bull;  
-
 public void setup() 
 {
   size(500,500);
   bob = new SpaceShip();
-  // bull = new Bullet();
   starField = new Stars[100];
   for(int i = 0; i < starField.length; i++)
     {
@@ -30,8 +27,6 @@ public void draw()
     }
   bob.show();
   bob.move();
-  // bull.show();
-  // bull.move();
    for(int i = 0; i < rocks.size(); i ++)
     {
        if (dist(bob.getX(), bob.getY(), rocks.get(i).getX(), rocks.get(i).getY()) < 10 )
@@ -60,7 +55,6 @@ public void keyPressed()
   if (key == 'd')
   {
     bob.turn(15);
-
   }
   if (key == 'h')
   {
