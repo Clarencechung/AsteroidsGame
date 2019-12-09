@@ -4,7 +4,7 @@ ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
 
 public void setup() 
 {
-  size(500,500);
+  size(800,800);
   bob = new SpaceShip();
   starField = new Stars[100];
   for(int i = 0; i < starField.length; i++)

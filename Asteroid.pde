@@ -29,15 +29,13 @@ class Asteroid extends Floater
 
     public void move()
     {
-      
-      super.move();
+
       turn(rockrot);
       myCenterX += Math.cos(rockrot);
       myCenterY += Math.sin(rockrot);
       if(myCenterX > width)
         myCenterX = 0;
       if (myCenterY > height)
-        myCenterY = 0;
-      
+        myCenterY = 0;     
     }
   }
