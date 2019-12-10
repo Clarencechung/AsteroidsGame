@@ -4,7 +4,7 @@ ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
 
 public void setup() 
 {
-  size(800,800);
+  size(500,500);
   bob = new SpaceShip();
   starField = new Stars[100];
   for(int i = 0; i < starField.length; i++)
@@ -65,5 +65,3 @@ public void keyPressed()
     bob.setPointDirection((int)(Math.random()*361));
   }
 }
-
-

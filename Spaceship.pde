@@ -1,4 +1,4 @@
-class SpaceShip extends Floater  
+class  SpaceShip extends Floater  
 { 
   public void setX(int x) {myCenterX = x;} 
   public int getX() {return (int)myCenterX;}   
