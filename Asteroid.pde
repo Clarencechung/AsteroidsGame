@@ -21,7 +21,6 @@ class Asteroid extends Floater
       
       xCorners = new int[]{-20, -10, 5, 20,10, -10, -20};
       yCorners = new int[]{0, -20, -20 ,0, 20, 15, 0};
-      
       myCenterX = (int)(Math.random()*600);
       myCenterY = (int)(Math.random()*600);
       rockrot = (int)((Math.random()*8)-10);
@@ -29,13 +28,10 @@ class Asteroid extends Floater
 
     public void move()
     {
-
+      super.move();
       turn(rockrot);
       myCenterX += Math.cos(rockrot);
       myCenterY += Math.sin(rockrot);
-      if(myCenterX > width)
-        myCenterX = 0;
-      if (myCenterY > height)
-        myCenterY = 0;     
+     
     }
   }
